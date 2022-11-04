@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for f in `find . -regex ".*\/vim$\|.*/.lua$"`; do
+	rm -rf ~/.config/nvim/$f
+	ln -s ~/dotfiles/config
+done
