@@ -1,5 +1,10 @@
 [font]
 size = 16.0
+offset = { x = 1, y = 1 }
+normal      = { family = "MesloLGS NF", style = "Regular" }
+bold        = { family = "MesloLGS NF", style = "Bold" }
+italic      = { family = "MesloLGS NF", style = "Italic" }
+bold_italic = { family = "MesloLGS NF", style = "Bold Italic" }
 
 [window]
 padding = { x = 0, y=10}
