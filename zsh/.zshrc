@@ -121,5 +121,3 @@ alias display-std='displayplacer "id:395072C1-67C1-484B-8759-650C97564F23 res:25
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
