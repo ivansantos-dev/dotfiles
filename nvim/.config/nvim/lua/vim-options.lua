@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.filetype.add({ extension = { templ = "templ" } })
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 
