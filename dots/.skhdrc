@@ -1,0 +1,57 @@
+hyper - t : open -a '/opt/homebrew/bin/alacritty'
+hyper - c : open -a '/Applications/Google Chrome.app'
+hyper - s : open -a '/Applications/Slack.app/'
+hyper - q : open -a '/Applications/PyCharm.app/'
+hyper - w : open -a '/Applications/GoLand.app/'
+hyper - e : open -a '/Applications/IntelliJ IDEA.app/'
+hyper - d : open -a '/Applications/DBeaver.app/'
+
+hyper - m: open -a '/System/Applications/Messages.app/'
+
+
+# start/stop yabai
+ctrl + alt - q : brew services stop yabai
+ctrl + alt - s : brew services start yabai
+
+# focus window
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+# swap focus window
+shift + alt - h : yabai -m window --swap west
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - l : yabai -m window --swap east
+
+# change  external display focus
+alt - s: yabai -m display --focus west
+alt - g: yabai -m display --focus east
+
+# move window to prev/next space
+shift + alt - s: yabai -m window --space prev
+shift + alt - g: yabai -m window --space next
+
+## modifying layout
+# rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+
+# flip along %-axis
+shift + alt - y : yabai -m space --mirror y-axis
+shift + alt - x : yabai -m space --mirror x-axis
+
+# float / unfloat window and center on screen
+alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# balance out tree of windows
+shift + alt -e : yabai -m space --balance
+
+# toggle window zoom
+alt - d : yabai -m window --toggle zoom-parent
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+# fast focus desktop
+cmd + alt - x : yabai -m space --focus recent
+cmd + alt - 1 : yabai -m space --focus 1
+
