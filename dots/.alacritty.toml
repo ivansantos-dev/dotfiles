@@ -9,3 +9,8 @@ bold_italic = { family = "MesloLGS NF", style = "Bold Italic" }
 [window]
 padding = { x = 5, y=10 }
 opacity = 0.95
+
+[keyboard]
+bindings = [
+	{key = "f", mods = "Control|Shift", chars = "fzf\n"}
+]
