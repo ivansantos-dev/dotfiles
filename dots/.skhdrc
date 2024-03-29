@@ -1,12 +1,4 @@
-hyper - t : open -a '/opt/homebrew/bin/alacritty'
-hyper - c : open -a '/Applications/Google Chrome.app'
-hyper - s : open -a '/Applications/Slack.app/'
-hyper - q : open -a '/Applications/PyCharm.app/'
-hyper - w : open -a '/Applications/GoLand.app/'
-hyper - e : open -a '/Applications/IntelliJ IDEA.app/'
-hyper - d : open -a '/Applications/DBeaver.app/'
-
-hyper - m: open -a '/System/Applications/Messages.app/'
+cmd - tab : open -a '/opt/homebrew/bin/alacritty'
 
 # fast focus desktop
 alt - 1 : yabai -m space --focus 1
