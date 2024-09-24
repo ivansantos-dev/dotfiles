@@ -1,3 +1,4 @@
 set nocompatible
 set relativenumber
 set scrolloff=5
+set ideajoin
