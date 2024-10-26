@@ -7,6 +7,3 @@ fi
 if [ -f "$HOME/.profile-env" ]; then
     source "$HOME/.profile-env"
 fi
-
-alias vim="nvim"
-
