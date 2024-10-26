@@ -31,6 +31,6 @@ yabai -m config \
   mouse_action2 resize \
   mouse_drop_action swap
 
-yabai -m rule --add app="System Settings" sticky=on manage=off
+yabai -m rule --add app="System Settings|main" sticky=on manage=off
 
 echo "yabai configuration loaded.."
