@@ -10,3 +10,4 @@ fi
 
 alias vim="nvim"
 
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
