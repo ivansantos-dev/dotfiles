@@ -9,6 +9,7 @@ yabai -m config \
   mouse_follows_focus off \
   focus_follows_mouse off \
   window_origin_display default \
+  window_topmost on \
   window_placement second_child \
   window_zoom_persist on \
   window_shadow on \
@@ -31,6 +32,16 @@ yabai -m config \
   mouse_action2 resize \
   mouse_drop_action swap
 
-yabai -m rule --add app="System Settings|main" sticky=on manage=off
+yabai -m rule --add title="(Copy|Bin|About This Mac|Info)" manage=off
+
+# Do not manage some apps which are not resizable
+yabai -m rule --add app="^(Calculator|VLC|System Settings)$" manage=off
+
+yabai -m rule --add app="^Godot$" manage=off
+
+yabai -m signal --add event=window_title_changed label="Godot" app='^Godot$' manage=off 
+    
+IDEA_apps='^(GoLand|DataGrip|PyCharm|IntelliJ IDEA)$'
+yabai -m rule --add app="${IDEA_apps}" title!=".*\[.*\].*" manage=off
 
 echo "yabai configuration loaded.."
