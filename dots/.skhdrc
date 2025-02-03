@@ -1,5 +1,6 @@
 cmd - tab : open -a '/opt/homebrew/bin/alacritty'
 cmd + shift - tab : yabai --restart-service
+
 # fast focus desktop
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2

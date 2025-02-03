@@ -35,7 +35,7 @@ yabai -m config \
 yabai -m rule --add title="(Copy|Bin|About This Mac|Info)" manage=off
 
 # Do not manage some apps which are not resizable
-yabai -m rule --add app="^(Calculator|VLC|System Settings)$" manage=off
+yabai -m rule --add app="^(FaceTime|Calculator|VLC|System Settings)$" manage=off
 
 yabai -m rule --add app="^Godot$" manage=off
 
