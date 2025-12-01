@@ -1,4 +1,4 @@
 Install stow
 
 ``
-`stow /path-to-dotfiles/ -t ~`
+`stow /path-to-dotfiles/dots -t ~`
