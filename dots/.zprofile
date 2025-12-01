@@ -1,7 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-if [ -f "$HOME/.work-profile" ]; then
-    source "$HOME/.work-profile"
+if [ -f "$HOME/.zprofile-work" ]; then
+    source "$HOME/.zprofile-work"
 fi
 
 if [ -f "$HOME/.profile-env" ]; then
