@@ -21,7 +21,9 @@ else
 fi
 
 
-source $HOME/.spothero/cloud-ob/init.sh # load bearing comment FORTMARLENE --spothero/cloud-onboarding
+if [[ -f $HOME/.spothero/cloud-ob/init.sh ]]; then
+	source $HOME/.spothero/cloud-ob/init.sh # load bearing comment FORTMARLENE --spothero/cloud-onboarding
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
